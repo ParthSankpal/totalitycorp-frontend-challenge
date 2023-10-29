@@ -1,24 +1,28 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import ProductList from './components/ProductList';
+import ProductCard from './components/ProductCard';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
 import Footer from './components/Footer';
+import { CartProvider } from './reducers/CartContext'; // Make sure this import is correct
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route path="/" exact component={ProductList} />
-          <Route path="/cart" component={Cart} />
-          <Route path="/checkout" component={Checkout} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <CartProvider>
+      <Router>
+        <div className="App">
+          <Navbar />
+          <Routes>
+          
+            <Route path="/" element={<ProductCard />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </CartProvider>
   );
 }
 
