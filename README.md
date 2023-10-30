@@ -1,3 +1,6 @@
+![image](https://github.com/ParthSankpal/totalitycorp-frontend-challenge/assets/114609530/890f6578-d16f-40ed-a2da-df3d001ccaad)
+
+
 # E-Commerce Product Listing and Shopping Cart Application
 
 
