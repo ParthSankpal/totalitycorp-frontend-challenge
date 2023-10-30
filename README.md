@@ -35,7 +35,12 @@ Open your web browser and access http://localhost:3000 to view the application.
 
 # Technologies Used
 React: A popular JavaScript library for building user interfaces.
+
 React Context API: Used for managing the shopping cart state.
+
 HTML and CSS TailwindCSS: For structuring and styling the application.
-Contributing
+
+
+# Contributing
+
 Contributions to this project are welcome! If you have any ideas for improvements or would like to fix issues, please feel free to open a pull request.
