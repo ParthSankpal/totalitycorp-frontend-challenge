@@ -36,7 +36,7 @@ const Cart = () => {
     <div className=''>
       <div className=" flex flex-col items-center  shadow dark:bg-gray-800 dark-border-gray-700">
       {cart.length === 0 ? (
-        <p className="w-screen text-gray-600 dark:text-white h-[50vh] flex justify-center align-middle items-center">ADD ITEMS TO CART</p>
+        <p className="w-[98.9vw] text-gray-600 dark:text-white h-[50vh] flex justify-center align-middle items-center">ADD ITEMS TO CART</p>
       ) : (
         <>
           <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1 bg-white  dark:bg-gray-800 dark-border-gray-700'>

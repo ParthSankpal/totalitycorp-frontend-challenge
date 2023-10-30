@@ -5,7 +5,7 @@ const Footer = () => {
     
 <footer className="bg-white dark:bg-gray-900 ">
     <div className="mx-auto w-full ">
-      <div className="  grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4 ml-14 sm:ml-24">
+      <div className="  grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4 ml-10 sm:ml-24">
         <div className=''>
             <div className=''>
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
@@ -80,7 +80,7 @@ const Footer = () => {
             </div>
         </div>
     </div>
-    <div className="px-4 py-6 bg-gray-100 dark:bg-gray-700 flex flex-col justify-center gap-4 md:items-center md:justify-between">
+    <div className="px-4 py-6 bg-gray-100 dark:bg-gray-700 flex flex-col justify-center gap-4 md:items-center ">
         <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 <a href="#" className=' font-Higuen'>BuyOn™</a>. All Rights Reserved.
         </span>
         <div className="flex mt-4 space-x-5 sm:justify-center md:mt-0">

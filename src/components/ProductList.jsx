@@ -351,14 +351,14 @@ const ProductList = ({ selectedCategory, onCategoryChange }) => {
 
 
   return (
-    <div className=" md:flex dark:bg-gray-800 md:w-full ">
+    <div className=" md:flex dark:bg-gray-800 w-full ">
         <aside
         id="sidebar-multi-level-sidebar"
        className=""
         aria-label="Sidebar"
       >
         <div class=" px-3 py-4 border border-s-slate-200 bg-gray-50 dark:bg-gray-900 rounded-lg">
-          <ul class="  space-y-2 overflow-hidden font-medium flex md:flex-col justify-between align-middle items-center">
+          <ul class="  space-y-2 overflow-x-hidden font-medium flex md:flex-col justify-between align-middle items-center">
             
             <li className=" w-full ">
             <button
