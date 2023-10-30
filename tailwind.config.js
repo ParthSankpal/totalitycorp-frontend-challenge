@@ -5,7 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      'w-screen': 'calc(100vw - 1rem)'
+    },
   },
   plugins: [],
 }

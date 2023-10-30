@@ -33,7 +33,7 @@ const Cart = () => {
   };
 
   return (
-    <div className=''>
+    <div className='w-screen'>
       <div className=" flex flex-col items-center  shadow dark:bg-gray-800 dark-border-gray-700">
       {cart.length === 0 ? (
         <p className=" text-gray-600 dark:text-white h-[50vh] flex align-middle items-center">ADD ITEMS TO CART</p>

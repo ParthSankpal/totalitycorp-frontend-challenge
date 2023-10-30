@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { BsFillPersonFill } from "react-icons/bs";
 import { categories } from "./ProductList";
+import BuyOn from '../assets/BuyOn.png';
 
 const Navbar = ({ onCategoryChange }) => {
   // console.log(ProductCard.categories);
@@ -19,18 +20,18 @@ const Navbar = ({ onCategoryChange }) => {
 
   return (
     <>
-      <nav className="stick w-screen bg-white border-gray-200 dark:bg-gray-900">
+      <nav className=" sticky w-screen  bg-white border-gray-200 dark:bg-gray-900">
         <div className="mx-auto p-4">
           <div className="flex items-center justify-between">
             <a href="https://flowbite.com/" className="flex items-center">
               <img
-                src="https://flowbite.com/docs/images/logo.svg"
+                src={BuyOn}
                 className="h-8 mr-3"
-                alt="Flowbite Logo"
+                alt="BuyOn"
               />
-              <span className="text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Flowbite
-              </span>
+              {/* <span className="text-2xl font-semibold whitespace-nowrap dark:text-white">
+                BuyOn
+              </span> */}
             </a>
             <div className="flex ">
               <button

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
+// import { useHistory } from "react-router-dom"; 
 import { AiOutlineClose } from "react-icons/ai";
 
 const CheckoutModal = ({ isOpen, onRequestClose }) => {
@@ -9,8 +10,13 @@ const CheckoutModal = ({ isOpen, onRequestClose }) => {
   const [paymentOption, setPaymentOption] = useState("Credit Card");
   const [showThankYouModal, setShowThankYouModal] = useState(false);
 
+
+//   const history = useHistory();
+
+
   const handleCheckout = () => {
     setShowThankYouModal(true);
+    window.location.href = "/";
   };
 
   return (
@@ -28,7 +34,7 @@ const CheckoutModal = ({ isOpen, onRequestClose }) => {
         },
       }}
     >
-      <div className="flex items-center justify-center z-50  p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div className="flex items-center justify-center z-50  p-4 overflow-x-hidden overflow-y-auto max-h-full">
         <div className="relative w-full max-w-md max-h-full">
           <div className="relative bg-white rounded-lg shadow dark:bg-gray-800">
             <button

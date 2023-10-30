@@ -351,7 +351,7 @@ const ProductList = ({ selectedCategory, onCategoryChange }) => {
 
 
   return (
-    <div className=" md:flex dark:bg-gray-800">
+    <div className=" md:flex dark:bg-gray-800 w-screen">
         <aside
         id="sidebar-multi-level-sidebar"
         class="   relative"
