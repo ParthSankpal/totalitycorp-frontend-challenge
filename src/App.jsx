@@ -7,6 +7,7 @@ import Cart from './components/Cart';
 import Checkout from './components/Checkout';
 import Footer from './components/Footer';
 import { CartProvider } from './reducers/CartContext'; // Make sure this import is correct
+import Sidebar from './components/Sidebar';
 
 function App() {
 
@@ -22,8 +23,9 @@ function App() {
       <Router>
         <div className="App">
           <Navbar selectedCategory={selectedCategory} onCategoryChange={handleCategoryChange}/>
+          {/* <Sidebar/> */}
           <Routes>
-            <Route path="/" element={<ProductList selectedCategory={selectedCategory}/>} />
+            <Route path="/" element={<ProductList selectedCategory={selectedCategory} onCategoryChange={handleCategoryChange}/>} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
           </Routes>
