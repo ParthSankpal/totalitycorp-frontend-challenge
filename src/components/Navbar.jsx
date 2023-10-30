@@ -24,16 +24,16 @@ const Navbar = ({ onCategoryChange }) => {
 
   return (
     <>
-      <nav className=" sticky   bg-white border-gray-200 dark:bg-gray-900">
+      <nav className=" sticky w-full  bg-white border-gray-200 dark:bg-gray-900">
         <div className="mx-auto p-4">
           <div className="flex">
-            <div className=" flex justify-between sm:justify-normal w-full sm:w-1/3">
-            <a href="https://flowbite.com/" className=" md:w-1/3 flex items-center">
+            <div className=" flex justify-between md:justify-normal w-full md:w-1/3">
+            <Link to="/" href="https://flowbite.com/" className=" md:w-1/3 flex items-center">
               <img src={BuyOn} className="h-8 mr-3" alt="BuyOn" />
               {/* <span className="text-2xl font-semibold whitespace-nowrap dark:text-white">
                 BuyOn
               </span> */}
-            </a>
+            </Link>
 
             <button
                 data-collapse-toggle="navbar-search"
@@ -64,8 +64,8 @@ const Navbar = ({ onCategoryChange }) => {
             </div>
             <div
               className={`  ${
-                isMobileMenuOpen ? " absolute top-32 z-50  bg-gray-800 rounded" : "hidden"
-              }     md:flex  items-center justify-between md:w-2/3 `}
+                isMobileMenuOpen ? " absolute top-16 left-0 z-50  bg-gray-900 rounded" : "hidden"
+              }  md:static   md:flex  items-center justify-between w-full md:w-2/3 `}
             >
               <div className="flex  ">
                 {/* <button
@@ -81,7 +81,7 @@ const Navbar = ({ onCategoryChange }) => {
                   </span>
                 </button> */}
                 <div
-                  className="relative  md:flex "
+                  className="relative  md:flex  "
                   onClick={handleCategoryDropdownHover}
                 >
                   <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -137,7 +137,7 @@ const Navbar = ({ onCategoryChange }) => {
                   <li>
                     <Link
                       to="/"
-                      className="block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                      className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                       aria-current="page"
                     >
                       Home
@@ -149,22 +149,22 @@ const Navbar = ({ onCategoryChange }) => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover-bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent">
+                    <Link className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                       Services
                     </Link>
                   </li>
                   <li>
                     <Link
                       to="/cart"
-                      className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover-bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover-text-blue-500 dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent"
+                      className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     >
                       Cart
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/profile"
-                      className="flex py-2 items-center pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover-bg-transparent md:border-0 md:hover-text-blue-700 md:p-0 dark:text-white md:dark:hover-text-blue-500 dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent"
+                      to="#"
+                      className="flex align-middle items-center py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     >
                       <BsFillPersonFill /> Profile
                     </Link>

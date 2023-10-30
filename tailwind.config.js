@@ -6,7 +6,10 @@ export default {
   ],
   theme: {
     extend: {
-      'w-screen': 'calc(100vw - 1rem)'
+      fontFamily: {
+        Higuen:"Higuen",
+        
+      },
     },
   },
   plugins: [],

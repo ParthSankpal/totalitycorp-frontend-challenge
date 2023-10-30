@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+@font-face {
+  font-family: Higuen;
+  src: url("./assets/fonts/Higuen Serif.otf") format("opentype");
+  /* font-family: Norwester;
+  src: url("./assets/fonts/norwesterregular-j5r9-webfont.woff") format("opentype"); */
+}
+
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

@@ -351,10 +351,10 @@ const ProductList = ({ selectedCategory, onCategoryChange }) => {
 
 
   return (
-    <div className=" md:flex dark:bg-gray-800 ">
+    <div className=" md:flex dark:bg-gray-800 md:w-full ">
         <aside
         id="sidebar-multi-level-sidebar"
-       
+       className=""
         aria-label="Sidebar"
       >
         <div class=" px-3 py-4 border border-s-slate-200 bg-gray-50 dark:bg-gray-900 rounded-lg">
@@ -363,7 +363,7 @@ const ProductList = ({ selectedCategory, onCategoryChange }) => {
             <li className=" w-full ">
             <button
                 type="button"
-                className="flex items-center w-full align-middle gap-1 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover-bg-gray-700"
+                className="flex items-center w-full align-middle gap-1 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-500 dark:text-white dark:hover-bg-gray-700"
                 aria-controls="dropdown-example"
                 data-collapse-toggle="dropdown-example"
                 onClick={handleSideBarCategoryDropdownHover}
@@ -371,15 +371,15 @@ const ProductList = ({ selectedCategory, onCategoryChange }) => {
                 <BsFillDiagram2Fill />
                 <span className="flex-1  text-left whitespace-nowrap">Categories</span>
                 {isSideBarCategoryDropdownVisible ? (
-                  <BsFillCaretDownFill className="origin-center rotate-180 duration-500" />
+                  <BsFillCaretDownFill className="origin-center rotate-180 duration-500 hidden sm:flex" />
                 ) : (
-                  <BsFillCaretDownFill className="origin-center rotate-0 duration-500" />
+                  <BsFillCaretDownFill className="origin-center rotate-0 duration-500 hidden sm:flex" />
                 )}
               </button>
               {isSideBarCategoryDropdownVisible && (
                 <div className="mt-2 absolute top-15  z-40 space-y-2 rounded md:w-[87%] bg-white border border-gray-200 dark:bg-gray-900 dark:border-gray-700">
                   <button
-                    className="block w-full px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover-bg-gray-700"
+                    className="block w-full px-4 py-2 text-gray-900 hover:bg-gray-500 dark:text-white dark:hover-bg-gray-700"
                     onClick={() => handleCategoryClick("All")}
                   >
                     All
@@ -387,7 +387,7 @@ const ProductList = ({ selectedCategory, onCategoryChange }) => {
                   {categories.map((category) => (
                     <button
                       key={category}
-                      className="block w-full px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover-bg-gray-700"
+                      className="block w-full px-4 py-2 text-gray-900 hover:bg-gray-500 dark:text-white dark:hover-bg-gray-700"
                       onClick={() => handleCategoryClick(category)}
                     >
                       {category}
@@ -399,7 +399,7 @@ const ProductList = ({ selectedCategory, onCategoryChange }) => {
             <li className=" w-full">
               <button
                 type="button"
-                className="flex items-center w-full align-middle gap-1 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover-bg-gray-700"
+                className="flex items-center w-full align-middle gap-1 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-500 dark:text-white dark:hover-bg-gray-700"
                 aria-controls="price-dropdown"
                 data-collapse-toggle="price-dropdown"
                 onClick={handleSideBarPriceDropdownHover}
@@ -407,9 +407,9 @@ const ProductList = ({ selectedCategory, onCategoryChange }) => {
                 <IoPricetags />
                 <span className="flex-1  text-left whitespace-nowrap">Price Range</span>
                 {isSideBarPriceDropdownVisible ? (
-                  <BsFillCaretDownFill className="origin-center rotate-180 duration-500" />
+                  <BsFillCaretDownFill className="origin-center rotate-180 duration-500 hidden sm:flex" />
                 ) : (
-                  <BsFillCaretDownFill className="origin-center rotate-0 duration-500" />
+                  <BsFillCaretDownFill className="origin-center rotate-0 duration-500 hidden sm:flex" />
                 )}
               </button>
               {isSideBarPriceDropdownVisible && (
@@ -429,7 +429,7 @@ const ProductList = ({ selectedCategory, onCategoryChange }) => {
             <li className=" w-full ">
               <button
                 type="button"
-                className="flex items-center w-full align-middle gap-1 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover-bg-gray-700"
+                className="flex items-center w-full align-middle gap-1 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-500 dark:text-white dark:hover-bg-gray-700"
                 aria-controls="price-dropdown"
                 data-collapse-toggle="price-dropdown"
                 onClick={handelSidebarRatingDropdownHover}
@@ -437,9 +437,9 @@ const ProductList = ({ selectedCategory, onCategoryChange }) => {
                 <GiStarsStack />
                 <span className="flex-1  text-left whitespace-nowrap">Ratings</span>
                 {isSidebarRatingDropdownVisible ? (
-                  <BsFillCaretDownFill className="origin-center rotate-180 duration-500" />
+                  <BsFillCaretDownFill className="origin-center rotate-180 duration-500 hidden sm:flex" />
                 ) : (
-                  <BsFillCaretDownFill className="origin-center rotate-0 duration-500" />
+                  <BsFillCaretDownFill className="origin-center rotate-0 duration-500 hidden sm:flex" />
                 )}
               </button>
               {isSidebarRatingDropdownVisible && (
@@ -457,16 +457,18 @@ const ProductList = ({ selectedCategory, onCategoryChange }) => {
               )}
             </li>
             <li  className=" w-full ">
-              <a
-                href="#"
-                class="flex items-center w-full align-middle gap-1 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover-bg-gray-700 md:px-5"
+              
+            <button
+                type="button"
+                className="flex items-center w-full align-middle gap-1 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-500 dark:text-white dark:hover-bg-gray-700"
+                
               >
-                <BsBellFill/>
-                <span class="flex-1  whitespace-nowrap">Inbox</span>
-                <span class="inline-flex items-center justify-center w-3 h-3 p-3  text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">
+                  <BsBellFill/>
+                <span class="flex-1  text-left whitespace-nowrap">Inbox</span>
+                <span class=" items-center justify-center w-3 h-3 p-3 hidden sm:flex text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">
                   3
                 </span>
-              </a>
+                </button>
             </li>
       
             

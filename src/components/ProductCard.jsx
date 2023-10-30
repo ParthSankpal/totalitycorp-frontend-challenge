@@ -32,7 +32,7 @@ function ProductCard({ products }) {
     <div className=" flex justify-center p-2 md:m-3 h-auto	">
       <div
         key={products._id}
-        className="w-full flex flex-col items-center max-w-sm bg-white border border-gray-200 rounded-lg shadow darkbg-gray-900 dark-border-gray-700"
+        className="w-full flex flex-col items-center  bg-white border border-gray-200 rounded-lg shadow darkbg-gray-900 dark-border-gray-700"
       >
         <div className="w-full flex justify-center p-3">
           <img
@@ -74,7 +74,7 @@ function ProductCard({ products }) {
               <span className=" text-xs md:text-sm line-through font-bold text-gray-900 dark-text-white">
                 {`$${products.actual_price}`}{" "}
               </span>{" "}
-              <span className=" text-xs  md:text-lg    font-bold p-1 rounded bg-blue-100 text-gray-800 dark-text-white">{`${products.discount}`}</span>
+              <span className=" text-xs  md:text-sm    font-bold p-1 rounded bg-blue-100 text-gray-800 dark-text-white">{`${products.discount}`}</span>
               <span className=" text-xs sm:text-sm md:text-xl py-1  font-bold text-gray-900 dark-text-white">{`$${products.selling_price}`}</span>
             </div>
             <button
@@ -82,7 +82,7 @@ function ProductCard({ products }) {
               data-popover-target="popover-default"
               type="button"
               disabl={isAddedToCart}
-              className={`text-white text-xs sm:text-sm md:text-lg lg:text-xl ${
+              className={`text-white text-xs sm:text-sm lg:text-lg ${
                 isAddedToCart ? "bg-gray-500" : "bg-blue-700"
               } hover-bg-blue-800 focus-ring-4 focus-outline-none focus-ring-blue-300 font-medium rounded-lg  px-5 py-2.5 text-center dark-bg-blue-600 dark-hover-bg-blue-700 dark-focus-ring-blue-800`}
             >
