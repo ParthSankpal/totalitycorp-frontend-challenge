@@ -377,7 +377,7 @@ const ProductList = ({ selectedCategory, onCategoryChange }) => {
                 )}
               </button>
               {isSideBarCategoryDropdownVisible && (
-                <div className="mt-2 absolute top-15  z-40 space-y-2 rounded md:w-[87%] bg-white border border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+                <div className="mt-2 absolute top-15  z-40 space-y-2 rounded  bg-white border border-gray-200 dark:bg-gray-900 dark:border-gray-700">
                   <button
                     className="block w-full px-4 py-2 text-gray-900 hover:bg-gray-500 dark:text-white dark:hover-bg-gray-700"
                     onClick={() => handleCategoryClick("All")}
@@ -413,7 +413,7 @@ const ProductList = ({ selectedCategory, onCategoryChange }) => {
                 )}
               </button>
               {isSideBarPriceDropdownVisible && (
-                <div className="mt-2 absolute top-30 z-40 space-y-2 rounded md:w-[87%] bg-white border border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+                <div className="mt-2 absolute top-30 z-40 space-y-2 rounded  bg-white border border-gray-200 dark:bg-gray-900 dark:border-gray-700">
                   {priceRanges.map((priceRange) => (
                     <button
                       key={priceRange}
@@ -443,7 +443,7 @@ const ProductList = ({ selectedCategory, onCategoryChange }) => {
                 )}
               </button>
               {isSidebarRatingDropdownVisible && (
-                <div className="mt-2 absolute top-50 z-40 space-y-2 rounded md:w-[87%] bg-white border border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+                <div className="mt-2 absolute top-50 z-40 space-y-2 rounded  bg-white border border-gray-200 dark:bg-gray-900 dark:border-gray-700">
                   {ratingRanges.map((ratingRange) => (
                     <button
                       key={ratingRange}
